@@ -134,7 +134,7 @@ void softquit() {
 	GRRLIB_FreeTTF(header_font);
 	GRRLIB_FreeTTF(body_font);
 	GRRLIB_Exit();
-	fatUnmount(0);
+	fatUnmount("fat:");
 }
 
 void quit() {
